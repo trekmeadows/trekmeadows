@@ -1,0 +1,47 @@
+.backgroundRow {
+    /* background-image: url(../assets/thanks.jpeg);  */
+    background: linear-gradient(rgba( 0, 0, 0, 0.5), rgba( 0, 0, 0, 0.3)), url(../assets/bckimg.jpg);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    justify-content: center;
+    align-items: center;
+    
+    /* align-content: center; */
+    min-height: 100vh;
+    /* margin-bottom: 100px; */
+}
+/* .backgroundRow::before {
+    content: '';
+    position: absolute;
+    top: 24%;
+    left: 0;
+    width: 100%;
+    height: 57.5%;
+    background-color: rgba(0, 0, 0, 0.5);
+  } */
+.thanksH2{
+    color: white;
+font-size: 2.4em;
+/* margin-bottom: 8%; */
+}
+.thanksHP{
+    color: white;
+font-size: 1.2em;
+/* margin-bottom: 8%; */
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+    /* .backgroundRow::before {
+        content: '';
+        position: absolute;
+        top: 16.5%;
+        left: 0;
+        width: 100%;
+        height: 53.2%;
+        background-color: rgba(0, 0, 0, 0.5); 
+      } */
+   
+}
