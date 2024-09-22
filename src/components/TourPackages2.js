@@ -9,7 +9,7 @@ function TourPackages2() {
     
  <Row className='div-contain-inner bck1'>
  <h3 className='custom-h2'>Best Kashmir Tour Packages</h3>
-    <Col sm={12} md={4}>
+    <Col sm={12} md={4} className='mb-2 mb-md-0'>
     <div style={{borderWidth:'1px',borderColor:'grey',borderStyle:"solid",borderRadius:'7px',backgroundColor:'white'}}>
         <img src={require('../assets/pakages/4.webp')} className='' style={{width:'100%',height:'240px', borderTopLeftRadius:'7px',borderTopRightRadius:'7px'}} />
         <div style={{}} className='p-3'>
@@ -53,7 +53,7 @@ function TourPackages2() {
       
     </div>
     </Col>
-    <Col sm={12} md={4}>
+    <Col sm={12} md={4} className='mb-2 mb-md-0'>
     <div style={{borderWidth:'1px',borderColor:'grey',borderStyle:"solid",borderRadius:'7px',backgroundColor:'white'}}>
         <img src={require('../assets/pakages/5.webp')} className='' style={{width:'100%',height:'240px', borderTopLeftRadius:'7px',borderTopRightRadius:'7px'}} />
         <div style={{}} className='p-3'>
@@ -145,7 +145,7 @@ function TourPackages2() {
     </Row>
   
     <Row className='div-contain-inner bck1'>
-    <Col sm={12} md={4}>
+    <Col sm={12} md={4}  className='mb-2 mb-md-0'>
     <div style={{borderWidth:'1px',borderColor:'grey',borderStyle:"solid",borderRadius:'7px',backgroundColor:'white'}}>
         <img src={require('../assets/pakages/3.webp')} className='' style={{width:'100%',height:'240px', borderTopLeftRadius:'7px',borderTopRightRadius:'7px'}} />
         <div style={{}} className='p-3'>
@@ -189,7 +189,7 @@ function TourPackages2() {
       
     </div>
     </Col>
-    <Col sm={12} md={4}>
+    <Col sm={12} md={4} className='mb-2 mb-md-0'>
     <div style={{borderWidth:'1px',borderColor:'grey',borderStyle:"solid",borderRadius:'7px',backgroundColor:'white'}}>
         <img src={require('../assets/pakages/2.webp')} className='' style={{width:'100%',height:'240px', borderTopLeftRadius:'7px',borderTopRightRadius:'7px'}} />
         <div style={{}} className='p-3'>
@@ -281,7 +281,7 @@ function TourPackages2() {
     </Row>
 
     <Row className='div-contain-inner bck1'>
-    <Col sm={12} md={4}>
+    <Col sm={12} md={4} className='mb-2 mb-md-0'>
     <div style={{borderWidth:'1px',borderColor:'grey',borderStyle:"solid",borderRadius:'7px',backgroundColor:'white'}}>
         <img src={require('../assets/pakages/7.webp')} className='' style={{width:'100%',height:'240px', borderTopLeftRadius:'7px',borderTopRightRadius:'7px'}} />
         <div style={{}} className='p-3'>
@@ -325,7 +325,7 @@ function TourPackages2() {
       
     </div>
     </Col>
-    <Col sm={12} md={4}>
+    <Col sm={12} md={4} className='mb-2 mb-md-0'>
     <div style={{borderWidth:'1px',borderColor:'grey',borderStyle:"solid",borderRadius:'7px',backgroundColor:'white'}}>
         <img src={require('../assets/pakages/8.webp')} className='' style={{width:'100%',height:'240px', borderTopLeftRadius:'7px',borderTopRightRadius:'7px'}} />
         <div style={{}} className='p-3'>

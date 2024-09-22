@@ -16,48 +16,97 @@ const KashmirTabs = () => {
     { id: 'blog', label: 'Blog' },
   ];
 
+  // Group tabs into sets of three for mobile view
+  const mobileGroups = tabs.reduce((resultArray, item, index) => { 
+    const groupIndex = Math.floor(index / 3);
+    if(!resultArray[groupIndex]) {
+      resultArray[groupIndex] = [];
+    }
+    resultArray[groupIndex].push(item);
+    return resultArray;
+  }, []);
+
   return (
-    <Nav 
-      variant="pills" 
-      activeKey={activeTab}
-      onSelect={(selectedKey) => setActiveTab(selectedKey)}
-      className="kashmir-tabs"
-    >
-      {tabs.map((tab) => (
-        <Nav.Item key={tab.id}>
-          <Nav.Link eventKey={tab.id}>{tab.label}</Nav.Link>
-        </Nav.Item>
-      ))}
+    <div className="kashmir-tabs-container">
+      <Nav
+        variant="pills"
+        activeKey={activeTab}
+        onSelect={(selectedKey) => setActiveTab(selectedKey)}
+        className="kashmir-tabs"
+      >
+        {/* Desktop view */}
+        {tabs.map((tab) => (
+          <Nav.Item key={tab.id} className="desktop-tab">
+            <Nav.Link eventKey={tab.id}>{tab.label}</Nav.Link>
+          </Nav.Item>
+        ))}
+
+        {/* Mobile view */}
+        {mobileGroups.map((group, groupIndex) => (
+          <div key={groupIndex} className="mobile-group">
+            {group.map((tab) => (
+              <Nav.Item key={tab.id}>
+                <Nav.Link eventKey={tab.id}>{tab.label}</Nav.Link>
+              </Nav.Item>
+            ))}
+          </div>
+        ))}
+      </Nav>
+      
       <style jsx>{`
+        .kashmir-tabs-container {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
         .kashmir-tabs {
-          border-radius: 50px;
-          background-color: #f8f9fa;
-          padding: 10px;
           display: inline-flex;
           flex-wrap: wrap;
           gap: 5px;
+          background-color: #f8f9fa;
+          padding: 10px;
+          border-radius: 50px;
         }
-        .kashmir-tabs .nav-link {
+        .nav-link {
           border-radius: 50px;
           padding: 8px 16px;
           color: #6c757d;
           border: none;
+          text-align: center;
+          white-space: nowrap;
         }
-        .kashmir-tabs .nav-link.active {
+        .nav-link.active {
           background-color: #007bff;
           color: white;
         }
+        .mobile-group {
+          display: none;
+        }
         @media (max-width: 768px) {
+          .kashmir-tabs-container {
+            justify-content: flex-start;
+          }
+          .kashmir-tabs {
+            display: flex;
+            width: 100%;
+          }
+          .desktop-tab {
+            display: none;
+          }
+          .mobile-group {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 10px;
+          }
           .kashmir-tabs {
             flex-direction: column;
             align-items: stretch;
-          }
-          .kashmir-tabs .nav-link {
-            text-align: center;
+            border-radius: 10px;
           }
         }
       `}</style>
-    </Nav>
+    </div>
   );
 };
 

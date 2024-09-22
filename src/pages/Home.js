@@ -19,11 +19,13 @@ import MainHead from '../components/MainHead';
 import { PhoneCallIcon } from 'lucide-react';
 import WhyChoose from '../components/WhyChoose';
 import emailjs from '@emailjs/browser';
+import { useNavigate } from 'react-router-dom';
 
 // import '../App.css';
 
 function Home() {
   const form = useRef();
+  const navigation = useNavigate();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,6 +37,7 @@ function Home() {
       .then(
         () => {
           console.log('SUCCESS!');
+          navigation('/thankyou');
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -59,7 +62,7 @@ function Home() {
   </Col>
 </Row> */}
 
-   <div className='homeDiv'>
+   <Row className='homeDiv'>
    
    <Container  className='homeDiv2'>
 
@@ -123,10 +126,10 @@ function Home() {
 </Form> 
 </Container>
 
-   </div>
-   <center >
+   </Row>
+   {/* <center > */}
 <KashmirTabs />
-</center>
+ {/* </center> */}
 <AboutTrek />
 <AboutKashmir2 />
 <WhyChoose />

@@ -211,6 +211,7 @@ font-weight: bold;
 
 .homeDiv{
   background-image: url(../src/assets/ban1.webp);
+  background-color: #000;
   background-size: cover;
   background-position: center;
   margin: 0 ;
@@ -218,7 +219,7 @@ font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: end;
-  width: 100%;
+  /* width: 100%; */
  /* padding-bottom: 4%; */
  padding: 0% 10% 3% 10%;
  margin-bottom: 2%;
@@ -255,13 +256,13 @@ font-weight: bold;
   border-top: 1px solid #c2c2c2;
   padding-top: 4%;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
   .mart-for{
     margin-top: 15%;
   }
   .padd-top{
-    padding-top: 15%;
+    padding-top: 5%;
   }
   .div-contain-banner {
     padding: 0% 5%;
@@ -287,5 +288,54 @@ font-weight: bold;
   .why-choose-p {
 
   }
+
+  .about-kashmir-img {
+    width: 100%;
+    /* height: auto;
+    border-radius: 10px; */
+  }
+
+  
+.best-travel-img {
+  width: 100%;
+  /* height: auto;
+  border-radius: 10px; */
+}
+
+.div-contain {
+  padding: 5% 5% 5% 5%;
+}
+
+.div-contain-inner{
+  padding: 5% 3%;
+}
+
+
+.homeDiv{
+
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+ padding: 0% 10% 3% 10%;
+ margin-bottom: 2%;
+}
+
+.homeDiv2{
+  display: none;
+
+  /* background-color: #333333aa;
+  padding: 1%;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center; */
+}
+
+.homeDiv2P{
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #fff;
+  width: 100%;
+}
 }
 
