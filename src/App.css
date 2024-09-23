@@ -256,6 +256,13 @@ font-weight: bold;
   border-top: 1px solid #c2c2c2;
   padding-top: 4%;
 }
+
+.modal-bg-img{
+  background-image: url(../src/assets/happy.png);
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+}
 @media screen and (max-width: 500px) {
 
   .mart-for{
@@ -290,6 +297,13 @@ font-weight: bold;
   }
   p{
     font-size: 0.9em; 
+ 
+      /* font-weight: bold; */
+      color: #333; /* Dark gray color */
+      margin: 5px 0;
+      /* text-align: center; */
+      line-height: 1.4 ; 
+ 
   }
 
   .why-choose-p {
@@ -314,7 +328,7 @@ font-weight: bold;
 }
 
 .div-contain-inner{
-  padding: 5% 3%;
+  padding: 2% 3%;
 }
 
 

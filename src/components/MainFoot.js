@@ -74,79 +74,62 @@ function MainFoot({ show, handleClose, handleShow}) {
 
 
 
-    <Modal show={show} onHide={handleClose} centered style={{backgroundColor:'transparent'}} >
-         <Modal.Header closeButton>
-       
-        </Modal.Header> 
-        <Modal.Body closeButton>
-        <Row>
-          <Col sm={12} md={6}>
-            <img src='' />
-          </Col>
-          <Col sm={12} md={6}>
-          <h4>HAVE US CALL YOU BACK!</h4>
-          <Form ref={form} onSubmit={sendEmail}>
-<Row>
-       
-        <Col className='col-12 mb-3'>
-    <Form.Control type="text" placeholder='Your Name' id="fullName" name="fullName"/>
-    </Col>
-    <Col className='col-12 mb-3'>
-    <Form.Control type="email" placeholder='Email Id' id="emailId" name="emailId"/>
-    </Col>
-    <Col className='col-12 mb-3'>
-    <Form.Control type="tel" placeholder='Mobile No.' id="mobileNo" name="mobileNo"/>
-    </Col>
-    <Col className='col-12 mb-3'>
-    <Form.Select aria-label="Default select example" id='package' name='package'>
-      <option>Select Packages</option>
-      <option value="Family Tour Package">Family Tour Package</option>
-      <option value="Honeymoon Tour Package">Honeymoon Tour Package</option>
-      <option value="Srinagar Tour Package">Srinagar Tour Package</option>
-      <option value="Kashmir Great Lakes Trek Package">Kashmir Great Lakes Trek Package</option>
-      <option value="Naranag Gangabal Trek Package">Naranag Gangabal Trek Package</option>
-      <option value="Kashmir Exotic Tour Package">Kashmir Exotic Tour Package</option>
-      <option value="Solo Tour Package">Solo Tour Package</option>
-      <option value="Group Tour Package">Group Tour Package</option>
-      <option value="Romantic Tour Package">Romantic Tour Package</option>
-      
-     
-    </Form.Select>
-    </Col>
-    <Col className='col-12 mb-3'>
-    <Form.Control type="number" placeholder='No of Person' id="person" name="person" />
-    </Col>
-    <Col className='col-12 mb-3'>
-    <Form.Select aria-label="Default select example" className='w-100' id="TravelMonth" name="TravelMonth">
-    <option>Travel Month</option>
-          <option value="January">January</option>
-          <option value="February">February</option>
-          <option value="March">March</option>
-          <option value="April">April</option>
-          <option value="May">May</option>
-          <option value="June">June</option>
-          <option value="July">July</option>
-          <option value="August">August</option>
-          <option value="September">September</option>
-          <option value="October">October</option>
-          <option value="November">November</option>
-          <option value="December">December</option>
-    </Form.Select>
-    </Col>
-    <Col>
-    <Button variant="primary" type="submit" className='w-100'>
-        Submit
-      </Button>
-      </Col>
-    
-      </Row>
-</Form> 
-          </Col>
-        </Row>
-       
+      <Modal size="lg" show={show} onHide={handleClose} centered>
+        {/* <Modal.Header closeButton>
+          <Modal.Title>HAVE US CALL YOU BACK!</Modal.Title>
+        </Modal.Header> */}
+        <Modal.Body className='p-0'>
+          <Row>
+            <Col md={6} className='d-none d-md-block modal-bg-img rounded-start'>
+              {/* <img src={require('../assets')} alt="Placeholder" /> */}
+            </Col>
+            <Col sm={12} md={6} className='d-flex justify-content-center align-items-center px-0 py-5 px-md-2 py-md-5'>
+            <div className='border rounded p-4'>
+            <h4 className='text-center text-dark'>Navratri Special</h4>
+            <p className='text-dark'>Flat 40% off on Kashmir Tour Packages</p>
+              <Form ref={form} onSubmit={sendEmail}>
+                <Form.Group className="mb-3">
+                  <Form.Control type="text" placeholder='Your Name' id="fullName" name="fullName"/>
+                </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Control type="email" placeholder='Email Id' id="emailId" name="emailId"/>
+                </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Control type="tel" placeholder='Mobile No.' id="mobileNo" name="mobileNo"/>
+                </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Select aria-label="Select Packages" id='package' name='package'>
+                    <option>Select Packages</option>
+                    <option value="Family Tour Package">Family Tour Package</option>
+                    <option value="Honeymoon Tour Package">Honeymoon Tour Package</option>
+                    <option value="Srinagar Tour Package">Srinagar Tour Package</option>
+                    {/* Add other options here */}
+                  </Form.Select>
+                </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Control type="number" placeholder='No of Person' id="person" name="person" />
+                </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Select aria-label="Travel Month" id="TravelMonth" name="TravelMonth">
+                    <option>Travel Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    {/* Add other months here */}
+                  </Form.Select>
+                </Form.Group>
+                <Button variant="primary" type="submit" className='w-100'>
+                  Submit
+                </Button>
+              </Form>
+              </div>
+            </Col>
+          </Row>
         </Modal.Body>
-    
       </Modal>
+   
+
+
+
     </>
   )
 }

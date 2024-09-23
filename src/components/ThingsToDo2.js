@@ -16,11 +16,12 @@ function ThingsToDo2() {
         <Col></Col>
         <Col></Col>
        </Row> */}
-        <div className='col-6 col-md-auto bg-light border border-secondary rounded-5  p-3 m-1 m-md-2 d-inline'><span>Attraction</span>   <span style={{backgroundColor:'red',borderRadius:'25px',padding:'7px'}}><ShoppingBag color="white" size={20} /></span> </div>
-        <div className='col-6 col-md-auto bg-light border border-secondary rounded-5  p-3 m-1 m-md-2 d-inline-block'><span>Activities</span>   <span style={{backgroundColor:'yellow',borderRadius:'25px',padding:'7px'}}><ShoppingBag color="white" size={20} /></span> </div>
-        <div className='col-6 col-md-auto bg-light border border-secondary rounded-5  p-3 m-1 m-md-2 d-inline'><span>Shopping</span>     <span style={{backgroundColor:'orange',borderRadius:'25px',padding:'7px'}}><ShoppingBag color="white" size={20} /></span> </div>
-        <div className='col-6 col-md-auto bg-light border border-secondary rounded-5  p-3 m-1 m-md-2 d-inline-block'><span>Food Item</span>    <span style={{backgroundColor:'brown',borderRadius:'25px',padding:'7px'}}><ShoppingBag color="white" size={20} /></span> </div>
-        <div className='col-5 col-md-auto bg-light border border-secondary rounded-5  p-3 m-1 m-md-2 d-inline-block'><span>Night Life</span>   <span style={{backgroundColor:'blue',borderRadius:'25px',padding:'7px'}}><ShoppingBag color="white" size={20} /></span> </div>
+        <div className='col-6 col-md-auto bg-light border border-secondary rounded-5  p-3 m-1 m-md-2 d-inline'><span>Attraction</span>          <img src={require('../assets/things/cam.jpeg')} width={30} style={{backgroundColor:'white',borderRadius:'25px',padding:'1px'}} /> </div>
+        <div className='col-6 col-md-auto bg-light border border-secondary rounded-5  p-3 m-1 m-md-2 d-inline-block'><span>Activities</span>    <img src={require('../assets/things/act.jpeg')} width={30} style={{backgroundColor:'white',borderRadius:'25px',padding:'1px'}} /> </div>
+        <div className='col-6 col-md-auto bg-light border border-secondary rounded-5  p-3 m-1 m-md-2 d-inline'><span>Shopping</span>            <img src={require('../assets/things/bag.jpeg')} width={30} style={{backgroundColor:'white',borderRadius:'25px',padding:'1px'}} /> </div>
+        <div className='col-6 col-md-auto bg-light border border-secondary rounded-5  p-3 m-1 m-md-2 d-inline-block'><span>Food Item</span>     <img src={require('../assets/things/bask.jpeg')} width={30} style={{backgroundColor:'white',borderRadius:'25px',padding:'1px'}} /> </div>
+        <div className='col-5 col-md-auto bg-light border border-secondary rounded-5  p-3 m-1 m-md-2 d-inline-block'><span>Night Life</span>    <img src={require('../assets/things/night.jpeg')} width={30} style={{backgroundColor:'white',borderRadius:'25px',padding:'1px'}} /> </div>
+        <div className='col-6 col-md-auto bg-light border border-secondary rounded-5  p-3 m-1 m-md-2 d-inline-block'><span>Hiking</span>        <img src={require('../assets/things/hik.png')} width={30} style={{backgroundColor:'white',borderRadius:'25px',padding:'1px'}} /> </div>
         </Col>
     </Row>
   )

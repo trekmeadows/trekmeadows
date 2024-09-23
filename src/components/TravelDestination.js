@@ -32,6 +32,7 @@ function TravelDestination() {
         showDots={true}
         responsive={responsive}
         infinite={true}
+        autoPlay={true}
         autoPlaySpeed={1000}
         itemClass="carousel-item-padding-40-px"
         >
