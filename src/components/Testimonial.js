@@ -24,7 +24,7 @@ function Testimonial() {
                 <p>Over all experience with Kashmir Hikers for the KGL trek in July 2023 was very good. I was part of a small group. The arrangement made by Kashmir Hikers was good. </p>
             </div>
         </Col>
-        <Col sm={12} md={4} className='mb-4 mb-md-0'>
+        <Col sm={12} md={4} className='d-none d-md-block mb-4 mb-md-0'>
         <div className='testimonial-div border border-dark-subtle rounded'>
         <img src={require('../assets/qu.png')} className='test-quote-img' />
             <h3>Vedant Rai</h3>
@@ -47,7 +47,7 @@ function Testimonial() {
                 <p>It was good experience for us to complete our KGL trek with kashmir hikers. Their staffs are so nice. Our cook Mr. Amzed bhai was so nice. So many special food we eat during our trek. Our guide Mr. Talib bhai he was so nice person. He is very young man but has a great experience of this trek. </p>
             </div>
         </Col>
-        <Col sm={12} md={4}  className='mb-4 mb-md-0'>
+        <Col sm={12} md={4}  className='d-none d-md-block mb-4 mb-md-0'>
         <div className='testimonial-div border border-dark-subtle rounded'>
         <img src={require('../assets/qu.png')} className='test-quote-img' />
             <h3>Nikhil Solanki</h3>

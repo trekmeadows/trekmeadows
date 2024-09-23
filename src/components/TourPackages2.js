@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Col, Row } from 'react-bootstrap'
 import { Camera, CarTaxiFront,Plane, HandPlatter } from 'lucide-react';
 
-function TourPackages2() {
+function TourPackages2({handleShow}) {
   return (
     <>
     
@@ -46,7 +46,7 @@ function TourPackages2() {
                 <p style={{color:'#0c4da2',fontSize:'1.5em',fontWeight:'bold',lineHeight:'0.4em'}}>₹ 60,000 <span style={{fontSize:'0.6em'}}>(For 4 Person)</span></p>
             </Col>
             <Col md={4} className='d-flex flex-row-reverse'>
-                <Button>Book Now</Button>
+                <Button onClick={handleShow}>Book Now</Button>
             </Col>
         </Row>
         </div>
@@ -90,7 +90,7 @@ function TourPackages2() {
                 <p style={{color:'#0c4da2',fontSize:'1.5em',fontWeight:'bold',lineHeight:'0.4em'}}>₹ 40,000 <span style={{fontSize:'0.6em'}}>(For 2 Person)</span></p>
             </Col>
             <Col md={4} className='d-flex flex-row-reverse'>
-                <Button>Book Now</Button>
+                <Button onClick={handleShow}>Book Now</Button>
             </Col>
         </Row>
         </div>
@@ -134,7 +134,7 @@ function TourPackages2() {
                 <p style={{color:'#0c4da2',fontSize:'1.5em',fontWeight:'bold',lineHeight:'0.4em'}}>₹ 50,000 <span style={{fontSize:'0.6em'}}>(For 2 Person)</span></p>
             </Col>
             <Col md={4} className='d-flex flex-row-reverse'>
-                <Button>Book Now</Button>
+                <Button onClick={handleShow}>Book Now</Button>
             </Col>
         </Row>
         </div>
@@ -182,7 +182,7 @@ function TourPackages2() {
                 <p style={{color:'#0c4da2',fontSize:'1.5em',fontWeight:'bold',lineHeight:'0.4em'}}>₹ 20,000 <span style={{fontSize:'0.6em'}}>(For Person)</span></p>
             </Col>
             <Col md={5} className='d-flex flex-row-reverse'>
-                <Button>Book Now</Button>
+                <Button onClick={handleShow}>Book Now</Button>
             </Col>
         </Row>
         </div>
@@ -226,7 +226,7 @@ function TourPackages2() {
                 <p style={{color:'#0c4da2',fontSize:'1.5em',fontWeight:'bold',lineHeight:'0.4em'}}>₹ 15,000 <span style={{fontSize:'0.6em'}}>(For Person)</span></p>
             </Col>
             <Col md={5} className='d-flex flex-row-reverse'>
-                <Button>Book Now</Button>
+                <Button onClick={handleShow}>Book Now</Button>
             </Col>
         </Row>
         </div>
@@ -270,7 +270,7 @@ function TourPackages2() {
                 <p style={{color:'#0c4da2',fontSize:'1.5em',fontWeight:'bold',lineHeight:'0.4em'}}>₹ 12,000 <span style={{fontSize:'0.6em'}}>(For Person)</span></p>
             </Col>
             <Col md={5} className='d-flex flex-row-reverse'>
-                <Button>Book Now</Button>
+                <Button  onClick={handleShow}>Book Now</Button>
             </Col>
         </Row>
         </div>
@@ -318,7 +318,7 @@ function TourPackages2() {
                 <p style={{color:'#0c4da2',fontSize:'1.5em',fontWeight:'bold',lineHeight:'0.4em'}}>₹ 9,000 <span style={{fontSize:'0.6em'}}>(For Person)</span></p>
             </Col>
             <Col md={5} className='d-flex flex-row-reverse'>
-                <Button>Book Now</Button>
+                <Button  onClick={handleShow}>Book Now</Button>
             </Col>
         </Row>
         </div>
@@ -362,7 +362,7 @@ function TourPackages2() {
                 <p style={{color:'#0c4da2',fontSize:'1.5em',fontWeight:'bold',lineHeight:'0.4em'}}>₹ 9,500 <span style={{fontSize:'0.6em'}}>(For Person)</span></p>
             </Col>
             <Col md={5} className='d-flex flex-row-reverse'>
-                <Button>Book Now</Button>
+                <Button onClick={handleShow}>Book Now</Button>
             </Col>
         </Row>
         </div>
@@ -406,7 +406,7 @@ function TourPackages2() {
                 <p style={{color:'#0c4da2',fontSize:'1.5em',fontWeight:'bold',lineHeight:'0.4em'}}>₹ 12,500 <span style={{fontSize:'0.6em'}}>(For Person)</span></p>
             </Col>
             <Col md={5} className='d-flex flex-row-reverse'>
-                <Button>Book Now</Button>
+                <Button onClick={handleShow}>Book Now</Button>
             </Col>
         </Row>
         </div>

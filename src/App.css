@@ -3,7 +3,7 @@
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 .div-contain {
-  padding: 3% 10% 3% 10%;
+  padding: 2% 10% 2% 10%;
 }
 
 .div-contain-inner{
@@ -273,6 +273,13 @@ font-weight: bold;
     font-size:1em;
     font-weight:500;
   }
+  .custom-h2 {
+    font-size: 1.4em;
+    /* font-weight: 600; */
+    /* color: #333; Dark gray color */
+    /* line-height: 1.4; */
+    margin-bottom: 0.5em;
+  }
 
   .div-contain {
     padding: 10% 5%;
@@ -337,5 +344,12 @@ font-weight: bold;
   color: #fff;
   width: 100%;
 }
+
+.footer-top-border{
+  /* border-top: 1px solid #c2c2c2; */
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
 }
 

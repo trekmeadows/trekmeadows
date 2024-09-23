@@ -3,11 +3,8 @@ import { Button, Col, Modal, Row, Form } from 'react-bootstrap'
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
 
-function MainFoot() {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+function MainFoot({ show, handleClose, handleShow}) {
+ 
 
     const form = useRef();
     const navigation = useNavigate();
@@ -36,13 +33,13 @@ function MainFoot() {
         <Col sm={12} md={3} className='footer-top-border' style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-start' }}>
             <img 
                 src={require('../assets/Trek Meadows.png')} 
-                style={{ width: '60%', height: 'auto' }} 
+                style={{ width: '40%', height: 'auto' }} 
                 alt="Trek Meadows" 
             />
         </Col>
 
         <Col sm={12} md={3} className='footer-top-border' >
-            <h2  className='custom-h2'>Useful Links</h2>
+            <h2  className='custom-h2 mb-1'>Useful Links</h2>
             <ul style={{ listStyleType: 'none', padding: 0, textAlign: 'start' }}>
     <li>Home</li>
     <li>About Us</li>
@@ -52,14 +49,14 @@ function MainFoot() {
 
         </Col>
         <Col sm={12} md={3} className='footer-top-border' >
-            <h2 className='custom-h2'>Contact</h2>
+            <h2 className='custom-h2 mb-1'>Contact</h2>
             <p>Naranag Ganderbal 16, Srinagar, Jammu and Kashmir, 191202</p>
             <p>9103547682</p>
             <p>kashmirhikers4@gmail.com</p>
 
         </Col>
         <Col sm={12} md={3} className='footer-top-border' >
-            <h2 className='custom-h2'>Follow Us</h2>
+            <h2 className='custom-h2 mb-1'>Follow Us</h2>
             <div>
               <a href='https://www.facebook.com/people/Kashmir-Hikers/100080441106045/' target='_blank'><img src={require('../assets/fb.png')} style={{height:'auto',width:'12%',marginRight:'5px'}} /></a>
               <a href='https://www.instagram.com/kashmirhikers/' target='_blank'><img src={require('../assets/insta.png')} style={{height:'auto',width:'13%'}} /></a>
@@ -70,19 +67,25 @@ function MainFoot() {
         <Col> <center><p><b>©2024. ALL RIGHTS RESERVED</b></p> </center> </Col>
     </Row>
     <Row className='d-md-none sticky-bottom'>
-        <Col className='col-6 bg-dark p-0'><Button className='w-100' onClick={handleShow}>Send Enquire</Button></Col>
+        <Col className='col-6 bg-primary p-0'><Button className='w-100' onClick={handleShow}>Send Enquire</Button></Col>
         <Col className='col-6 bg-warning p-0'><a href={`tel:9103547682`} className='w-100 btn btn-warning'>Call Us</a></Col>
         
     </Row>
 
 
 
-    <Modal show={show} onHide={handleClose} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>HAVE US CALL YOU BACK!</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-        <Form ref={form} onSubmit={sendEmail}>
+    <Modal show={show} onHide={handleClose} centered style={{backgroundColor:'transparent'}} >
+         <Modal.Header closeButton>
+       
+        </Modal.Header> 
+        <Modal.Body closeButton>
+        <Row>
+          <Col sm={12} md={6}>
+            <img src='' />
+          </Col>
+          <Col sm={12} md={6}>
+          <h4>HAVE US CALL YOU BACK!</h4>
+          <Form ref={form} onSubmit={sendEmail}>
 <Row>
        
         <Col className='col-12 mb-3'>
@@ -138,6 +141,9 @@ function MainFoot() {
     
       </Row>
 </Form> 
+          </Col>
+        </Row>
+       
         </Modal.Body>
     
       </Modal>

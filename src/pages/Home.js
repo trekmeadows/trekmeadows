@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import KashmirTabs from '../components/KashmirTabs';
 import BestTravel2 from '../components/BestTravel2';
@@ -24,6 +24,10 @@ import { useNavigate } from 'react-router-dom';
 // import '../App.css';
 
 function Home() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const form = useRef();
   const navigation = useNavigate();
 
@@ -133,7 +137,7 @@ function Home() {
 <AboutTrek />
 <AboutKashmir2 />
 <WhyChoose />
-<TourPackages2 />
+<TourPackages2  handleShow={handleShow}/>
 <TravelDestination />
 {/* <ThingsToDo /> */}
 <ThingsToDo2 />
@@ -142,7 +146,11 @@ function Home() {
 <Testimonial />
 <FAQ2 />
 <Blogs />
-<MainFoot />
+<MainFoot 
+    show={show} 
+    handleClose={handleClose} 
+    handleShow={handleShow}
+/>
    </Container>
   )
 }

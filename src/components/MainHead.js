@@ -5,8 +5,8 @@ import { Phone, Mail } from 'lucide-react';
 function MainHead() {
   return (
     <>
-      <Row className=" border-bottom border-primary border-2">
-        <Row className=" bg-white border-bottom">
+      <Row className="py-0 border-bottom border-primary border-2">
+        <Row className="py-1 bg-white border-bottom">
           <Col xs={7} md={6} className="d-flex align-items-center">
             <img
               src={require('../assets/Trek Meadows.png')}
@@ -30,7 +30,7 @@ function MainHead() {
       </Row>
       <style jsx>{`
         .company-logo {
-          width: 75px;
+          width: 60px;
           height: auto;
         }
         .contact-info {
@@ -45,7 +45,7 @@ function MainHead() {
         }
         @media (min-width: 768px) {
           .company-logo {
-            width: 100px;
+            width: 75px;
           }
           .contact-text {
             display: inline;
