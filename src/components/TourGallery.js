@@ -25,8 +25,8 @@ function TourGallery() {
     }
   };
   return (
-    <div  className='div-contain bck1'>
-    <Row>
+   
+    <Row className='div-contain bck2'>
         <Col>
             <h2  className='custom-h2'>Kashmir Tour Gallery</h2>
             <Carousel 
@@ -54,7 +54,7 @@ function TourGallery() {
         </Col>
     </Row>
 
-      </div>
+    
   )
 }
 

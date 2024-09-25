@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap'
 
 function AboutKashmir2() {
   return (
-    <Row className='div-contain bck1'>
+    <Row className='div-contain bck2'>
         <Col md={6} className=''>
     <img src={require('../assets/aboutkashmir2.webp')} className='about-kashmir-img mb-3 mb-md-0' />
         </Col>

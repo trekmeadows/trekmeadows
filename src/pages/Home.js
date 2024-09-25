@@ -20,6 +20,7 @@ import { PhoneCallIcon } from 'lucide-react';
 import WhyChoose from '../components/WhyChoose';
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
+import Banner from '../components/Banner';
 
 // import '../App.css';
 
@@ -50,7 +51,8 @@ function Home() {
   };
   return (
     <Container fluid className=''>
-    <MainHead />
+    <Banner />
+    {/* <MainHead /> */}
     {/* <Row className="d-flex align-items-center justify-content-between" style={{ padding: '10px', backgroundColor: '#f8f9fa' }}>
   <Col className="d-flex align-items-center" xs="auto">
     <img 
@@ -66,7 +68,7 @@ function Home() {
   </Col>
 </Row> */}
 
-   <Row className='homeDiv'>
+   {/* <Row className='homeDiv'>
    
    <Container  className='homeDiv2'>
 
@@ -130,9 +132,9 @@ function Home() {
 </Form> 
 </Container>
 
-   </Row>
+   </Row> */}
    {/* <center > */}
-<KashmirTabs />
+{/* <KashmirTabs /> */}
  {/* </center> */}
 <AboutTrek />
 <AboutKashmir2 />
@@ -140,7 +142,7 @@ function Home() {
 <TourPackages2  handleShow={handleShow}/>
 <TravelDestination />
 {/* <ThingsToDo /> */}
-<ThingsToDo2 />
+<ThingsToDo />
 <ReachKashmir />
 <TourGallery />
 <Testimonial />

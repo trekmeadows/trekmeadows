@@ -3,7 +3,7 @@ import { Accordion, Col, Row } from 'react-bootstrap'
 
 function FAQ2() {
   return (
-  <Row className='div-contain bck1'>
+  <Row className='div-contain bck2'>
     <Col>
     <h2  className='custom-h2'>FAQ's on Kashmir Tour and Travel Services</h2>
     <Row style={{borderColor:'grey',borderWidth:'1px',borderStyle:'solid',borderRadius:'10px',padding:'10px',marginBottom:'12px'}}>

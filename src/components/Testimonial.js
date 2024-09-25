@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap'
 
 function Testimonial() {
   return (
-    <Row className='div-contain bck2'>
+    <Row className='div-contain bck1'>
     <Row>
         <Col><h2  className='custom-h2'>Our Happy Customers</h2></Col>
     </Row>

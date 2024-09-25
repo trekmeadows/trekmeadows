@@ -7,7 +7,7 @@ function Blogs() {
     <>
     
     
- <Row className='div-contain-inner bck2'>
+ <Row className='div-contain-inner bck1'>
  <h3 className='custom-h2'>Our Featured Blogs</h3>
     <Col sm={12} md={4}  className='mb-2 mb-md-0'>
     <div style={{borderWidth:'1px',borderColor:'grey',borderStyle:"solid",borderRadius:'10px'}}>

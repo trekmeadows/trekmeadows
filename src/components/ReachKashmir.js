@@ -4,7 +4,7 @@ import { Plane, Bus, BusFront, TrainFront } from 'lucide-react'
 
 function ReachKashmir() {
   return (
-  <Row   className='div-contain bck2'>
+  <Row   className='div-contain bck1'>
   <h2 className='custom-h2'>How to reach kashmir</h2>
     <Col sm={12} md={4}>
         <Row>

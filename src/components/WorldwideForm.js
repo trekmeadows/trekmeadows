@@ -27,7 +27,7 @@ const WorldwideForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_wf1wp7i', 'template_o983mbo', form.current, 'tILja6w96emRNP7qN')
+    emailjs.sendForm('service_frzr50c', 'template_1be65wb', form.current, '6WbtcVKePaX_WgD1j')
       .then((result) => {
           console.log(result.text);
           navigation('/thankyou');

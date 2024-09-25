@@ -24,7 +24,7 @@ function TravelDestination() {
         }
       };
   return (
-    <Row className='div-contain bck2'>
+    <Row className='div-contain bck1'>
         <Row>
             <Col><h2  className='custom-h2'>Best Travel Destinations in Jammu & Kashmir</h2></Col>
         </Row>

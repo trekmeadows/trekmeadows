@@ -52,7 +52,7 @@ function MainFoot({ show, handleClose, handleShow}) {
             <h2 className='custom-h2 mb-1'>Contact</h2>
             <p>Naranag Ganderbal 16, Srinagar, Jammu and Kashmir, 191202</p>
             <p>9103547682</p>
-            <p>kashmirhikers4@gmail.com</p>
+            <p>trekmeadows@gmail.com</p>
 
         </Col>
         <Col sm={12} md={3} className='footer-top-border' >

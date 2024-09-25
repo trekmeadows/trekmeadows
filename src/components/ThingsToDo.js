@@ -27,13 +27,14 @@ function ThingsToDo() {
     }
   };
   return (
-   <Row className='div-contain bck1'>
+   <Row className='div-contain bck2'>
     <Col>
         <h2  className='custom-h2'>Things To Do In Kashmir</h2>
         <Carousel 
         showDots={true}
         responsive={responsive}
         infinite={true}
+        autoPlay={true}
         autoPlaySpeed={1000}
         itemClass="carousel-item-padding-40-px"
         >

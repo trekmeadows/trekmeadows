@@ -9,12 +9,15 @@ function Banner() {
     <>
    
     <Row className='div-contain-banner bck2' id='froForm'>
-    <Row  style={{textAlign:'left'}}>
-    <Col><img src={require('../assets/Kashmir Hikers.png')} alt="Kashmir Trip Packages" style={{ width:'130px', height:'130px'}}  /></Col>
-   </Row>
-        <Col className='col-12 col-md-7' style={{textAlign:'left'}}>
+    {/* <Row  style={{textAlign:'left'}}>
+    <Col><img src={require('../assets/Trek Meadows.png')} alt="Trek Meadows" style={{ width:'110px', height:'110px'}}  /></Col>
+   </Row> */}
+        <Col className='col-12 col-md-7' style={{textAlign:'left',justifyContent:'start',alignItems:'start'}}>
+        <img src={require('../assets/Trek Meadows.png')} alt="Trek Meadows" style={{ width:'110px', height:'110px'}}  />
+        <div className='banner-div-heading'>
             <h1 className='custom-h1'>Kashmir: A Dreamland of Majestic Mountains and Serene Lakes</h1>
-            <p style={{color:'#fff',fontSize:'1.3em',fontWeight:'500'}}>Plan Your Jammu Kashmir Trip With Kashmir Hikers</p>
+            <p style={{color:'#fff',fontSize:'1.3em',fontWeight:'500'}}>Plan Your Jammu Kashmir Trip With Trek Meadows</p>
+            </div>
         </Col>
         <Col className='col-12 col-md-5 d-flex flex-row-reverse'>
         <div className='left-aligned form-div'>
