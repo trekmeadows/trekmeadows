@@ -17,7 +17,7 @@ function Thanks() {
       <Row className='backgroundRow'>
         <Col>
           <h2 className="text-center text-light thanksH2">Thank You For Your Enquiry</h2>
-          <p className="text-center text-light thanksHP">Thank you for choosing Kashmir Hikers.</p>
+          <p className="text-center text-light thanksHP">Thank you for choosing Trek Meadows.</p>
         </Col>
       </Row>
 
